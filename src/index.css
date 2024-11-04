@@ -288,4 +288,24 @@ circle {
   transform: scale(0.9);
 }
 
+/* */
 
+/* Add this to your CSS file */
+@media (max-width: 320px) {
+  .table-container {
+    overflow-x: auto;
+    max-width: 80%; /* Set the maximum width for the container */
+  }
+
+  .responsive-table {
+    width: 100%;
+    min-width: 80%; /* Minimum width to ensure it doesn’t shrink too much */
+    /* table-layout: fixed; Control layout */
+  }
+}
+
+
+.form-control:focus {
+  border-color: red;
+  box-shadow: 0 0 5px rgba(242, 0, 0, 0.4); /* Box shadow with #0B4B30 color in rgba */
+}

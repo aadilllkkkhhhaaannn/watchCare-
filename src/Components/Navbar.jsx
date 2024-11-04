@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="container-fluid">
         <Link to={"/"}>
           {" "}
-          <span className="navbar-brand mb-0 h1">watchRepair</span>
+          <span className="navbar-brand mb-0 h1">WatchRepair</span>
         </Link>
 
         <span className="float-end">

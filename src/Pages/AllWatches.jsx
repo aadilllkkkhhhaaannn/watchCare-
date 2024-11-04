@@ -78,7 +78,7 @@ const AllWatches = () => {
                         className="btn btn-sm btn-dark"
                         to={`/watches/${watches?._id}`}
                       >
-                        View
+                        <i class="fas fa-eye"></i>
                       </Link>
                     </td>
                   </tr>

@@ -26,10 +26,13 @@ const Register = () => {
   const { name, email, password } = formData;
 
   const handleChange = (e) => {
-    if (e.target.name === "password" && e.target.value.length < 5) {
-      setPasswordError("Password must be at least 5 characters long.");
-    } else {
-      setPasswordError("");
+    if (e.target.name === "password") {
+      if (e.target.value.length < 5) {
+        setPasswordError("Password must be at least 5 characters long.");
+      } else {
+        // setPasswordError("Password is valid.");
+        setPasswordError("");
+      }
     }
     setFormData({
       ...formData,
@@ -149,7 +152,11 @@ const Register = () => {
       <div className="signup">
         <p>
           Already have an account? {""} <Link to={"/login"}>Login</Link>
+          
         </p>
+
+        
+        
       </div>
     </div>
   );

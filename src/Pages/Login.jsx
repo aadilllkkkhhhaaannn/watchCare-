@@ -32,7 +32,8 @@ const Login = () => {
       if (e.target.value.length < 5) {
         setPasswordError("Password must be at least 5 characters long.");
       } else {
-        setPasswordError("Password is valid.");
+      setPasswordError("");
+
       }
     }
   };
